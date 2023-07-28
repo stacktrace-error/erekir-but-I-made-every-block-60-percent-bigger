@@ -1,5 +1,5 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Erekir, 60% larger, 60% worse"
 
 #the internal name of your mod
 name: "erekir-big"
@@ -11,10 +11,10 @@ author: "nullevoy"
 main: "big.BigErekirMain"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "Replaces blocks on erekir with less space efficient versions. (Once I actually do add the tech tree,) Can you beat the campaign with it?\nDistribution blocks and cores may get their own addon.\n\n- [accent]Please do not use my sprites without permission."
 
 #the mod version
-version: 1.0
+version: 0.5, Pre-Campaign
 
 #the minimum game build required to run this mod
 minGameVersion: 140
