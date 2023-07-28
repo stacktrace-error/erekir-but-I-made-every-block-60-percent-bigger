@@ -735,7 +735,7 @@ public class BigErekirBlocks{
 
             block.localizedName = b.localizedName;
             block.description = b.description;
-            b.buildVisibility = BuildVisibility.sandboxOnly;
+            block.buildVisibility = BuildVisibility.sandboxOnly;
         });
 
         exceptions.each(block -> {
@@ -743,7 +743,7 @@ public class BigErekirBlocks{
 
             block.localizedName = b.localizedName;
             block.description = b.description;
-            b.buildVisibility = BuildVisibility.sandboxOnly;
+            block.buildVisibility = BuildVisibility.sandboxOnly;
         });
 
         blocks.add(exceptions);
