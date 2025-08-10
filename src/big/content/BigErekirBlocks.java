@@ -67,7 +67,9 @@ public class BigErekirBlocks{
 
     reinforcedPayloadConveyor, reinforcedPayloadRouter, payloadMassDriver, largePayloadMassDriver, smallDeconstructor, deconstructor, constructor, largeConstructor, payloadLoader, payloadUnloader,
 
-    canvas, reinforcedMessage;
+    canvas, reinforcedMessage,
+
+    groundSmelter;
 
     public static void load(){
         siliconArcFurnace = new GenericCrafter("large-silicon-arc-furnace"){{
@@ -704,8 +706,25 @@ public class BigErekirBlocks{
             size = 2;
         }};
 
+        Item crawler = new Item("crawleri"){{
 
+        }};
 
+        groundSmelter = new GenericCrafter("ground-smelter"){{
+            requirements(Category.crafting, with(Items.copper, 30, Items.lead, 25));
+            craftEffect = Fx.smeltsmoke;
+            outputItem = new ItemStack(crawler, 1);
+            craftTime = 40f;
+            size = 2;
+            hasPower = true;
+            hasLiquids = false;
+            drawer = new DrawMulti(new DrawDefault(), new DrawFlame(Color.valueOf("ffef99")));
+            ambientSound = Sounds.smelter;
+            ambientSoundVolume = 0.07f;
+
+            consumeItems(with(Items.coal, 1, Items.silicon, 2));
+            consumePower(0.50f);
+        }};
 
 
         blocks.addAll(
